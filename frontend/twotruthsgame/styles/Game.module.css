@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f7f7f7; /* Slightly off-white background for modern look */
+  min-height: 100vh;
+}
+
+.outputBox {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 50vh; /* Set the minimum height to 50% of the viewport height */
+  box-sizing: border-box;
+  overflow-y: auto; /* Add scrollbar if content overflows */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:rgb(3, 3, 3);
+  font-size: x-large;
+}
+
+.inputField {
+  width: 50vw;  /* Half the viewport width */
+  max-width: 600px; /* Match the max-width of the outputBox */
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: rgb(5, 5, 5); /* Example background color */
+  color: rgb(3, 3, 3); 
+}
+
+.submitButton {
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: #4CAF50; /* A more vibrant green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submitButton:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .outputBox,
+  .inputField {
+    width: 90vw; /* Most of the viewport width on smaller screens */
+    min-width: initial; /* Overrides any declarations */
+  }
+}
